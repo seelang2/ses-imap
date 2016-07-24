@@ -123,7 +123,7 @@ storageModule.setS3Options('S3BucketName', metadataBucket);
 storageModule.setS3Options('S3MboxKeySuffix', mboxKeySuffix);
 storageModule.setS3Options('S3MessageListKeySuffix', messageListKeySuffix);
 storageModule.setS3Options('S3MboxBucketSuffix', mboxBucketSuffix);
-storageModule.setS3Options('setConsoleMessages', debug);
+storageModule.setConsoleMessages(debug);
 
 var options = {
 	tls: useTLS,

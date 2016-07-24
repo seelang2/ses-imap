@@ -1,0 +1,33 @@
+{
+  "name": "ses-imap",
+  "version": "0.1.0",
+  "description": "IMAP server for Amazon SES",
+  "main": "ses-imap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seelang2/ses-imap.git"
+  },
+  "keywords": [
+    "Amazon",
+    "AWS",
+    "SES",
+    "IMAP",
+    "S3",
+    "Email"
+  ],
+  "author": "Chris Langtiw http://www.sitebabble.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seelang2/ses-imap/issues"
+  },
+  "homepage": "https://github.com/seelang2/ses-imap",
+  "dependencies": {
+    "imapper": "^0.5.0",
+    "imapper-auth-s3": "^0.3.1",
+    "imapper-storage-s3ses": "^0.4.0",
+    "lodash": "^4.13.1"
+  }
+}

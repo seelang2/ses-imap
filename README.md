@@ -3,7 +3,7 @@ This module is an IMAP server to be used with Amazon SES.
 
 SES provides an SMTP server for outbound email; however, it doesn't include any service to process incoming email messages. Incoming email is stored in S3 buckets (which can be configured on a per-email-account basis).
 
-SES-IMAP uses [Imapper](https://www.npmjs.com/package/imapper) as the IMAP server, with [Imapper-Storage-S3SES](https://www.npmjs.com/package/imapper-storage-s3ses) and [Imapper-Auth-S3](https://www.npmjs.com/package/imapper-auth-s3) to access the message data and email account authentication credentials stored in S3.
+SES-IMAP uses [Imapper](https://www.npmjs.com/package/imapper) as the IMAP server, with [Imapper-Storage-S3SES](https://www.npmjs.com/package/imapper-storage-s3ses) and [Imapper-Auth-S3](https://www.npmjs.com/package/imapper-auth-s3) to access the message data and email account authentication credentials stored in S3. It also requires that an AWS Lambda function be set up using [SES S3 Lambda](https://github.com/seelang2/ses-s3lambda) and triggered by an S3 PUT event for the email account(s) configured.
 
 **NOTE** This module and the storage plugin is still under development and may not be suited to production use.
 

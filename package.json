@@ -1,6 +1,6 @@
 {
   "name": "ses-imap",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "IMAP server for Amazon SES",
   "main": "ses-imap.js",
   "scripts": {
